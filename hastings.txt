@@ -1,0 +1,42 @@
+Good day Bradley,
+
+Thank you for contacting the AWS Premium Support Team, 
+my name is Hastings and I will be assisting with your case today. 
+
+From my point of view you are trying to launch a t3.large instance type from your custom AMI(0417d1e320e7cfc0b),
+but however you are unable to select it because it is grayed out.
+
+After reviewing your AMI, l have noticed that your AMI is using Paravirtual Virtualization instead of HVM(Hardware Virtual Machine) which
+does not support current generation instance types(t3.large included).
+
+Therefore l would suggest that you use a different AMI which supports HVM instead of Paravirtual.
+
+
+Reference 
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/virtualization_types.html
+
+Best Regards Hastings.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+The customer is using a custom AMI, which supports Paravirtual Virtualization.
+Paravirtual is not supported on most of the current generation instance types.
