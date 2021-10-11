@@ -1,6 +1,6 @@
-import React,{ useState } from "react";
+import React, { useState } from "react";
 import Video from "../videos/video.mp4";
-// import Video from '../../components/video.mp4'
+import { Button } from "../ButtonElement";
 import {
   HeroContainer,
   HeroBg,
@@ -26,20 +26,24 @@ const HeroSection = () => {
         <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
       </HeroBg>
       <HeroContent>
-        <HeroH1>Welcome to lapho nation bank</HeroH1>
+        <HeroH1>Simplified Banking</HeroH1>
         <HeroP>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta facere
-          asperiores repellat inventore mollitia voluptates nisi iure dolor,
-          labore adipisci earum laudantium, fugiat non vel odit corporis.
-          Necessitatibus, recusandae at?
+          <p>Bayayi bhubhudla abantwan baka Jeff</p>
+          <p>Imali iyabhubhudlwa</p>
         </HeroP>
-      </HeroContent>
 
-      <HeroBtnWrapper>
-        {/* <Button to="signup" onMouseEnter={onHover} onMouseLeave={onHover}>
-          Get Started{hover ? <ArrowForward /> : <ArrowRight />}
-        </Button> */}
-      </HeroBtnWrapper>
+        <HeroBtnWrapper>
+          <Button
+            to="signup"
+            onMouseEnter={onHover}
+            onMouseLeave={onHover}
+            primary="true"
+            dark="true"
+          >
+            Get Started {hover ? <ArrowForward /> : <ArrowRight />}
+          </Button>
+        </HeroBtnWrapper>
+      </HeroContent>
     </HeroContainer>
   );
 };
