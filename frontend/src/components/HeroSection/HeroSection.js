@@ -28,8 +28,8 @@ const HeroSection = () => {
       <HeroContent>
         <HeroH1>Simplified Banking</HeroH1>
         <HeroP>
-          <p>Bayayi bhubhudla abantwan baka Jeff</p>
-          <p>Imali iyabhubhudlwa</p>
+          <p>Applying for a bank card has never been</p>
+          <p>this easy, fast and convenient. </p>
         </HeroP>
 
         <HeroBtnWrapper>

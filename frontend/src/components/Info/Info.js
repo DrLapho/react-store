@@ -1,6 +1,6 @@
 import React from "react";
 import moneyPig from '../images/image1.svg'
-import register from '../images/register.svg'
+// import register from '../images/register.svg'
 import {
   Column2,
   ImgWrap,

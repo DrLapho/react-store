@@ -4,7 +4,7 @@ export const homeObjOne = {
     lightText:true,
     lightTextDesc :true,
     topLine :'Smart Bank',
-    headline : 'Boss Lady is still learning react',
+    headline : 'Digitalizing the banking industry',
     description : 'Get your bank card without physical going to the bank',
     buttonLabel : 'Learn More',
     imgStart :false,
@@ -15,12 +15,13 @@ export const homeObjOne = {
 };
 
 export const homeObjTwo = {
+   
     id:'explore',
     lightBg:true,
     lightText:false,
     lightTextDesc :false,
-    topLine :'Izinja Ze Game',
-    headline : 'Boss Lady is still learning react',
+    topLine :'Explore',
+    headline : 'How do you get your card via smart bank',
     description : 'Get your bank card without physical going to the bank',
     buttonLabel : 'Learn More',
     imgStart :true,
@@ -31,12 +32,13 @@ export const homeObjTwo = {
 }
 
 export const homeObjThree = {
+    to:'register',
     id:'signup',
     lightBg:true,
     lightText:false,
     lightTextDesc :false,
     topLine :'Register with us',
-    headline : 'Boss Lady is still learning react',
+    headline : 'Have your documents ready',
     description : 'Get your bank card without physical going to the bank',
     buttonLabel : 'Learn More',
     imgStart :false,
