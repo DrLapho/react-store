@@ -1,6 +1,6 @@
 import React from "react";
-import moneyPig from '../images/image1.svg'
-// import register from '../images/register.svg'
+import moneyPig from "../images/image1.svg";
+import { NavBtn, NavBtnLink } from "../Header/HeaderElements";
 import {
   Column2,
   ImgWrap,
@@ -15,9 +15,9 @@ import {
   Subtitle,
   BtnWrap,
 } from "./InfoElements";
-import { Button } from "../ButtonElement";
 
 const InfoSection = ({
+  to,
   lightBg,
   lightText,
   buttonLabel,
@@ -28,7 +28,8 @@ const InfoSection = ({
   alt,
   id,
   topLine,
-  primary,dark
+  primary,
+  dark,
 }) => {
   return (
     <>
@@ -41,24 +42,15 @@ const InfoSection = ({
                 <Heading lightText={lightText}>{headline}</Heading>
                 <Subtitle darkText={darkText}>{description}</Subtitle>
                 <BtnWrap>
-                  <Button to="home"
-                  smooth = {true}
-                  duration = {500}
-                  spy ={true}
-                  exact = "true"
-                  offset = {-80}
-                  primary = {primary ? 1 : 0 }
-                  dark = {dark ? 1 : 0 }
-                  >{buttonLabel}</Button>
+                  <NavBtn>
+                    <NavBtnLink to={to}> {buttonLabel}</NavBtnLink>
+                  </NavBtn>
                 </BtnWrap>
               </TextWrapper>
             </Column1>
             <Column2>
               <ImgWrap>
-                <Img
-                  src={moneyPig}
-                  alt={alt}
-                />
+                <Img src={moneyPig} alt={alt} />
               </ImgWrap>
             </Column2>
           </InfoRow>

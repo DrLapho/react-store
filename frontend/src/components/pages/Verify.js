@@ -1,12 +1,12 @@
 import React from 'react'
 
-const Register = () => {
+const Verify = () => {
     return (
         <>
-        
+        <h1>Verify</h1>
             
         </>
     )
 }
 
-export default Register
+export default Verify
